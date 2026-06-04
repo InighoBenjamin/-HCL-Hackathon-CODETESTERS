@@ -15,9 +15,6 @@ public class ScreenshotUtils {
     private static final String SCREENSHOT_DIR = System.getProperty("user.dir") + "/screenshots/";
     private static int stepCounter = 0;
 
-    /**
-     * Captures a screenshot and saves it with a step number and name
-     */
     public static String captureScreenshot(WebDriver driver, String stepName) {
         stepCounter++;
         String formattedStep = String.format("%02d", stepCounter);
@@ -44,9 +41,6 @@ public class ScreenshotUtils {
         return filePath;
     }
 
-    /**
-     * Captures a screenshot with a timestamp in the filename
-     */
     public static String captureTimestampedScreenshot(WebDriver driver, String stepName) {
         String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmm"));
         String fileName = stepName + "_" + timestamp + ".png";
