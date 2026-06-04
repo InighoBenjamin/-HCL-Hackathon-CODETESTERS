@@ -5,47 +5,47 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.codetesters</groupId>
-    <artifactId>HCL_Automation_Hackathon</artifactId>
-    <version>1.0.0</version>
+    <artifactId>amazon-price-tracker</artifactId>
+    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>CODETESTERS - HCL Automation Hackathon Framework</name>
+
+    <name>Amazon Price Tracker - CODETESTERS</name>
+    <description>HCL Hackathon - Amazon Water Purifier Price Tracker Automation</description>
 
     <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <selenium.version>4.18.1</selenium.version>
-        <testng.version>7.9.0</testng.version>
+        <selenium.version>4.15.0</selenium.version>
+        <testng.version>7.8.0</testng.version>
         <poi.version>5.2.5</poi.version>
-        <extentreports.version>5.1.1</extentreports.version>
-        <webdrivermanager.version>5.8.0</webdrivermanager.version>
-        <commons.io.version>2.15.1</commons.io.version>
+        <extent.version>5.1.1</extent.version>
+        <webdrivermanager.version>5.6.2</webdrivermanager.version>
     </properties>
 
     <dependencies>
-
-        <!-- ✅ Selenium WebDriver - Core automation library -->
+        <!-- Selenium WebDriver -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
         </dependency>
 
-        <!-- ✅ WebDriverManager - No manual chromedriver setup needed -->
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>${webdrivermanager.version}</version>
-        </dependency>
-
-        <!-- ✅ TestNG - Test execution framework -->
+        <!-- TestNG -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
         </dependency>
 
-        <!-- ✅ Apache POI - Read Excel for Data-Driven Testing -->
+        <!-- WebDriverManager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webdrivermanager.version}</version>
+        </dependency>
+
+        <!-- Apache POI for Excel -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
@@ -57,36 +57,43 @@
             <version>${poi.version}</version>
         </dependency>
 
-        <!-- ✅ ExtentReports - Beautiful HTML test reports -->
+        <!-- ExtentReports -->
         <dependency>
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
-            <version>${extentreports.version}</version>
+            <version>${extent.version}</version>
         </dependency>
 
-        <!-- ✅ Commons IO - For screenshot file copy utility -->
+        <!-- Commons Compress (required by Apache POI) -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-compress</artifactId>
+            <version>1.25.0</version>
+        </dependency>
+
+        <!-- Commons IO -->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>${commons.io.version}</version>
+            <version>2.15.1</version>
         </dependency>
-
-        <!-- PDFBox for reading PDF -->
-        <dependency>
-            <groupId>org.apache.pdfbox</groupId>
-            <artifactId>pdfbox</artifactId>
-            <version>2.0.29</version>
-        </dependency>
-
     </dependencies>
 
     <build>
         <plugins>
-            <!-- Maven Surefire Plugin - Runs testng.xml suite -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.2.5</version>
+                <version>3.2.2</version>
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
@@ -95,5 +102,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

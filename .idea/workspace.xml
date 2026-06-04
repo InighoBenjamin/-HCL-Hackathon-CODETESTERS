@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ce7de78-861c-4641-9b2b-20b70728ab35" name="Changes" comment="" />
+    <list default="true" id="6ce7de78-861c-4641-9b2b-20b70728ab35" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codetesters/automation/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codetesters/automation/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codetesters/automation/listeners/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codetesters/automation/listeners/TestListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codetesters/automation/pages/DashboardPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codetesters/automation/pages/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codetesters/automation/utils/CreateTestData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codetesters/automation/utils/ExcelUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codetesters/automation/utils/ExcelUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codetesters/automation/utils/ReportUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/codetesters/automation/tests/LoginTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/codetesters/automation/tests/WorkflowTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,9 +41,10 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/project/HCL_Automation_Hackathon",

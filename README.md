@@ -1,99 +1,77 @@
-# 🤖 CODETESTERS — HCL Automation Hackathon Framework
+# Amazon Price Tracker — CODETESTERS
 
-**Team:** CODETESTERS
-**Event:** HCL Automation Hackathon
-**Framework:** Selenium WebDriver + TestNG + POM + Data-Driven + ExtentReports
+## HCL GUVI Hackathon 2026
 
----
-
-## 📁 Project Structure
-
-```
-HCL_Automation_Hackathon/
-│
-├── pom.xml                          ← Maven dependencies
-├── testng.xml                       ← Suite runner + listener config
-│
-├── src/main/java/com/codetesters/automation/
-│   ├── base/         BaseTest.java          ← WebDriver setup
-│   ├── pages/        LoginPage.java         ← POM: Login screen
-│   │                 DashboardPage.java     ← POM: Main workflow
-│   ├── utils/        ExcelUtils.java        ← Excel reader (POI)
-│   │                 ReportUtils.java       ← HTML report generator
-│   │                 CreateTestData.java    ← Excel file generator
-│   └── listeners/    TestListener.java      ← Auto reporting
-│
-├── src/test/java/com/codetesters/automation/tests/
-│   ├── LoginTest.java                ← TC01, TC02, TC03
-│   └── WorkflowTest.java             ← TC04, TC05, TC06, TC07
-│
-└── src/test/resources/
-    ├── config.properties             ← URL, credentials, timeouts
-    └── testdata/TestData.xlsx        ← Excel test data
-```
+Automated Product Search, Price Capture & Change Tracking using Selenium Java POM Framework.
 
 ---
 
-## ⚡ Quick Setup (One-Time)
+## Project Overview
 
-### Step 1 — Load Maven dependencies
-```
-Right-click pom.xml → Maven → Reload Project
-```
-
-### Step 2 — Generate TestData.xlsx
-```
-Right-click CreateTestData.java → Run 'CreateTestData.main()'
-```
-
-### Step 3 — Update config.properties
-```properties
-app.url=https://YOUR-APP-URL.com
-valid.username=yourUsername
-valid.password=yourPassword
-```
-
-### Step 4 — Run the full suite
-```
-Right-click testng.xml → Run
-```
+This project automates the end-to-end workflow of:
+1. Opening Amazon India (amazon.in)
+2. Searching for "water purifier"
+3. Checking product availability
+4. Capturing product name & price for the first 5 available products
+5. Taking screenshots at every step
+6. Saving data to Excel (PriceData.xlsx)
+7. Tracking price changes and updating the Excel
+8. Generating HTML test reports using ExtentReports
 
 ---
 
-## 🔧 Technology Stack
+## Tech Stack
 
-| Tool | Version | Purpose |
-|------|---------|---------|
-| Java | 21 | Core language |
-| Selenium WebDriver | 4.18.1 | Browser automation |
-| TestNG | 7.9.0 | Test execution |
-| Maven | 3.x | Build & dependencies |
-| Apache POI | 5.2.5 | Excel data reading |
-| ExtentReports | 5.1.1 | HTML reports |
-| WebDriverManager | 5.8.0 | Auto driver setup |
-
----
-
-## 📊 Test Cases
-
-| ID | Test | Type |
-|----|------|------|
-| TC_01 | Valid Login | Positive |
-| TC_02 | Invalid Login | Negative |
-| TC_03 | Data-Driven Login | Data-Driven |
-| TC_04 | End-to-End Workflow | E2E |
-| TC_05 | Data-Driven Workflow | Data-Driven |
-| TC_06 | Alert Handling | Functional |
-| TC_07 | Dropdown Selection | Functional |
+| Technology       | Version | Purpose                        |
+|-----------------|---------|--------------------------------|
+| Java            | 11      | Core programming language       |
+| Selenium        | 4.15.0  | Browser automation              |
+| TestNG          | 7.8.0   | Test framework & assertions     |
+| Apache POI      | 5.2.5   | Excel read/write operations     |
+| ExtentReports   | 5.1.1   | HTML test report generation     |
+| Maven           | 3.x     | Build & dependency management   |
 
 ---
 
-## 📄 Report
-After test execution, the HTML report is at:
-```
-test-output/CODETESTERS_Report_<timestamp>.html
-```
+## How to Run
+
+1. Open the project in IntelliJ IDEA
+2. Right-click `testng.xml` → Run
+3. Or run via command line:
+   ```
+   mvn clean test
+   ```
 
 ---
 
-*Team CODETESTERS | HCL Automation Hackathon 🚀*
+## Test Cases
+
+| TC   | Class                      | Description                              |
+|------|----------------------------|------------------------------------------|
+| TC01 | SearchProductTest          | Open Amazon, search "water purifier"     |
+| TC02 | CaptureProductDataTest     | Capture 5 products, save to Excel        |
+| TC03 | PriceChangeTrackerTest     | Re-check prices, update Excel if changed |
+
+---
+
+## Outputs
+
+- **PriceData.xlsx** — Product names, prices, change tracking
+- **Screenshots** — 9+ step-wise PNG captures
+- **ExtentReport.html** — Professional HTML test report
+
+---
+
+## Team CODETESTERS
+
+| Member   | Role           |
+|----------|---------------|
+| Member 1 | Team Lead      |
+| Member 2 | POM Developer  |
+| Member 3 | Data Engineer  |
+| Member 4 | Test Engineer  |
+| Member 5 | Report Lead    |
+
+---
+
+© 2026 CODETESTERS — HCL GUVI Hackathon

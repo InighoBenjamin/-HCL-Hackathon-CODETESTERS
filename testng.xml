@@ -1,44 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Amazon Price Tracker Suite" verbose="1">
 
-<!--
-    testng.xml — CODETESTERS Test Suite Configuration
-    Controls: which tests run, their order, listeners, and parallel settings.
-    Curriculum: Day 11 (TestNG Suite Configuration)
-    Team: CODETESTERS | HCL Automation Hackathon
--->
-
-<suite name="CODETESTERS - HCL Hackathon Suite" verbose="1" thread-count="1">
-
-    <!-- Attach TestListener to auto-handle reporting for every test -->
     <listeners>
         <listener class-name="com.codetesters.automation.listeners.TestListener"/>
     </listeners>
 
-    <!-- ── Test Group 1: Login Tests ──────────────────────────────────── -->
-    <test name="Login Tests">
+    <test name="Final Project Flow">
         <classes>
-            <class name="com.codetesters.automation.tests.LoginTest">
-                <methods>
-                    <include name="testValidLogin"/>
-                    <include name="testInvalidLogin"/>
-                    <include name="testDataDrivenLogin"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-
-    <!-- ── Test Group 2: Workflow / End-to-End Tests ──────────────────── -->
-    <test name="Workflow Tests">
-        <classes>
-            <class name="com.codetesters.automation.tests.WorkflowTest">
-                <methods>
-                    <include name="testEndToEndWorkflow"/>
-                    <include name="testDataDrivenWorkflow"/>
-                    <include name="testAlertHandling"/>
-                    <include name="testDropdownSelection"/>
-                </methods>
-            </class>
+            <class name="com.codetesters.automation.tests.SearchProductTest"/>
+            <class name="com.codetesters.automation.tests.CaptureProductDataTest"/>
+            <class name="com.codetesters.automation.tests.PriceChangeTrackerTest"/>
         </classes>
     </test>
 
