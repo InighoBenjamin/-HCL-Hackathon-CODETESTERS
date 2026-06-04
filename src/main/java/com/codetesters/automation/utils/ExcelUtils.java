@@ -14,9 +14,6 @@ public class ExcelUtils {
     private static final String FILE_PATH = System.getProperty("user.dir") + "/testdata/PriceData.xlsx";
     private static final DateTimeFormatter TIMESTAMP_FORMAT = DateTimeFormatter.ofPattern("dd-MMM HH:mm");
 
-    /**
-     * Creates a new Excel workbook with headers
-     */
     public static void createExcelWithHeaders() {
         try {
             File dir = new File(System.getProperty("user.dir") + "/testdata");
