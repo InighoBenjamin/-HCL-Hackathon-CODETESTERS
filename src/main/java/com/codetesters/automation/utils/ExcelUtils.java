@@ -153,10 +153,6 @@ public class ExcelUtils {
 
         return prices;
     }
-
-    /**
-     * Updates the New Price column if the price has changed
-     */
     public static void updateNewPrice(String productName, String newPrice) {
         try {
             FileInputStream fis = new FileInputStream(FILE_PATH);

@@ -77,7 +77,6 @@ public class ScreenshotUtils {
     public static int getStepCount() {
         return stepCounter;
     }
-
     private static String getTimestamp() {
         return java.time.LocalTime.now().format(java.time.format.DateTimeFormatter.ofPattern("HH:mm:ss"));
     }
