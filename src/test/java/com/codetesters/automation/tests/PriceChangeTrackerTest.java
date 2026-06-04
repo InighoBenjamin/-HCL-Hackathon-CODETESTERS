@@ -81,5 +81,6 @@ public class PriceChangeTrackerTest extends BaseTest {
 
         System.out.println("[" + getTimestamp() + "] 💾 Excel updated with latest price data");
         System.out.println("[" + getTimestamp() + "] ✅ Price tracking complete!");
+        System.out.println();
     }
 }
