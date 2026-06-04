@@ -24,7 +24,6 @@ public class ExcelUtils {
             Workbook workbook = new XSSFWorkbook();
             Sheet sheet = workbook.createSheet("ProductData");
 
-            // Header style
             CellStyle headerStyle = workbook.createCellStyle();
             Font headerFont = workbook.createFont();
             headerFont.setBold(true);
@@ -67,9 +66,6 @@ public class ExcelUtils {
         }
     }
 
-    /**
-     * Writes a single product's data to the Excel file
-     */
     public static void writeProductData(int rowNum, String productName, String price) {
         try {
             FileInputStream fis = new FileInputStream(FILE_PATH);
