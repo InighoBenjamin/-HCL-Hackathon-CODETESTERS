@@ -119,9 +119,6 @@ public class ExcelUtils {
         }
     }
 
-    /**
-     * Reads existing prices from the Excel file
-     */
     public static Map<String, String> readExistingPrices() {
         Map<String, String> prices = new HashMap<>();
 
