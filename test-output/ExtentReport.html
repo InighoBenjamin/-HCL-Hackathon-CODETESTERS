@@ -1,522 +1,268 @@
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Amazon Price Tracker — Test Report</title>
-<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
-<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
-<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
-<style type="text/css"></style></head><body class="spa -report dark">
-  <div class="app">
-    <div class="layout">
-<div class="header navbar">
-<div class="vheader">
-<div class="nav-logo">
-<a href="#">
-<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
-</a>
-</div>
-<ul class="nav-left">
-<li class="search-box">
-<a class="search-toggle" href="#">
-<i class="search-icon fa fa-search"></i>
-<i class="search-icon-close fa fa-close"></i>
-</a>
-</li>
-<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
-</ul>
-<ul class="nav-right">
-<li class="m-r-10">
-<a href="#"><span class="badge badge-primary">CODETESTERS — HCL Hackathon</span></a>
-</li>
-<li class="m-r-10">
-<a href="#"><span class="badge badge-primary">04-Jun-2026 13:19:14</span></a>
-</li>
-</ul>
-</div>
-</div><div class="side-nav">
-<div class="side-nav-inner">
-<ul class="side-nav-menu">
-<li class="nav-item dropdown" onclick="toggleView('test-view')">
-<a id="nav-test" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
-<a id="nav-dashboard" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bar-chart"></i></span>
-</a>
-</li>
-</ul>
-</div>
-</div>      <div class="vcontainer">
-        <div class="main-content">
-<div class="test-wrapper row view test-view">
-  <div class="test-list">
-    <div class="test-list-tools">
-<ul class="tools pull-left">
-<li><a href="#"><span class="font-size-14">Tests</span></a></li>
-</ul>
-<ul class="tools text-right">
-<li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
-<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
-<div class="dropdown-divider"></div>
-<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
-</ul>
-</li>
-</ul>
-</div>    <div class="test-list-wrapper scrollable">
-      <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">searchWaterPurifier</p>
-            <p class="text-sm">
-              <span>1:19:16 pm</span> / <span>00:00:24:867</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">searchWaterPurifier</h5>
-<span class='badge badge-success'>06.04.2026 1:19:16 pm</span>
-<span class='badge badge-danger'>06.04.2026 1:19:41 pm</span>
-<span class='badge badge-default'>00:00:24:867</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">Open Amazon and search for water purifier</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:19:20 pm</td>
-        <td>
-          Opened Amazon.in homepage
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:19:21 pm</td>
-        <td>
-          Screenshot captured: amazon_homepage
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:19:21 pm</td>
-        <td>
-          Amazon homepage loaded successfully. Title: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:19:41 pm</td>
-        <td>
-          Searched for: water purifier
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:19:41 pm</td>
-        <td>
-          Screenshot captured: search_results
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:19:41 pm</td>
-        <td>
-          Search results displayed successfully
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:19:41 pm</td>
-        <td>
-          Found 22 products on the page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:19:41 pm</td>
-        <td>
-          ✅ Test PASSED: searchWaterPurifier
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="2"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">captureProductData</p>
-            <p class="text-sm">
-              <span>1:19:42 pm</span> / <span>00:01:52:688</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">captureProductData</h5>
-<span class='badge badge-success'>06.04.2026 1:19:42 pm</span>
-<span class='badge badge-danger'>06.04.2026 1:21:35 pm</span>
-<span class='badge badge-default'>00:01:52:688</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">Capture first 5 available product names and prices, save to Excel</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:19:49 pm</td>
-        <td>
-          Navigated to Amazon and searched for water purifier
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:19:53 pm</td>
-        <td>
-          Excel file created with headers
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:21:34 pm</td>
-        <td>
-          Product 1: Native M1 Pro Water Purifier by Urban Company | Smart Real-Time Tracking | 10-Stage RO+UV+Copper+Alkaline+Mineraliser | ... — ₹17,499
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:21:34 pm</td>
-        <td>
-          Product 2: Native M0 Water Purifier by Urban Company | 8-Stage RO+UV+Mineraliser | No Service for 2 Years | India’s Only 2-Year Unc... — ₹13,499
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:21:34 pm</td>
-        <td>
-          Product 3: AQUA D PURE 4 in 1 Copper RO Water Purifier with 10 Stage Purification Filtration, UV, UF, TDS Adjuster and 12 Liter Lar... — ₹5,248
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:21:34 pm</td>
-        <td>
-          Product 4: AquaX Pure Ro water Purifier RO+UV+COPPER+ZINC 10 Stages Purification. Advance MTDS and HTDS Membrane, Suitable for all ... — ₹4,999
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:21:35 pm</td>
-        <td>
-          Product 5: Aquaguard Delight NXT Aquasaver 9-Stage Water Purifier | Upto 60% Water Savings | RO+UV+UF+MC Tech | Suitable for Borewe... — ₹10,499
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:21:35 pm</td>
-        <td>
-          All 5 products captured successfully
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:21:35 pm</td>
-        <td>
-          Excel file created at: C:\project\HCL_Automation_Hackathon/testdata/PriceData.xlsx
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:21:35 pm</td>
-        <td>
-          ✅ Test PASSED: captureProductData
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="3"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">trackPriceChanges</p>
-            <p class="text-sm">
-              <span>1:21:36 pm</span> / <span>00:01:50:757</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">trackPriceChanges</h5>
-<span class='badge badge-success'>06.04.2026 1:21:36 pm</span>
-<span class='badge badge-danger'>06.04.2026 1:23:27 pm</span>
-<span class='badge badge-default'>00:01:50:757</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">Re-check prices and update Excel if any price has changed</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:21:36 pm</td>
-        <td>
-          Loaded 5 saved prices from Excel
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>1:21:46 pm</td>
-        <td>
-          Re-navigated to Amazon, searched water purifier again
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:23:27 pm</td>
-        <td>
-          ✅ No change: Native M1 Pro Water Purifier by Urban Company | Smart Real-Time Tracking | 10-Stage RO+UV+Copper+Alkaline+Mineraliser | ... still ₹17,499
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:23:27 pm</td>
-        <td>
-          ✅ No change: Native M0 Water Purifier by Urban Company | 8-Stage RO+UV+Mineraliser | No Service for 2 Years | India’s Only 2-Year Unc... still ₹13,499
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:23:27 pm</td>
-        <td>
-          ✅ No change: AQUA D PURE 4 in 1 Copper RO Water Purifier with 10 Stage Purification Filtration, UV, UF, TDS Adjuster and 12 Liter Lar... still ₹5,248
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:23:27 pm</td>
-        <td>
-          ✅ No change: AquaX Pure Ro water Purifier RO+UV+COPPER+ZINC 10 Stages Purification. Advance MTDS and HTDS Membrane, Suitable for all ... still ₹4,999
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:23:27 pm</td>
-        <td>
-          Price tracking complete. Checked: 4, Changes: 0
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:23:27 pm</td>
-        <td>
-          ✅ Test PASSED: trackPriceChanges
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-      </ul>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amazon Price Tracker — Motion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <style>
+        *{box-sizing:border-box;margin:0;padding:0;}
+        body{font-family:system-ui,sans-serif;background:#f4f4f0;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px;}
+        .scene{background:#ebebeb;border-radius:16px;padding:20px;width:100%;max-width:680px;}
+        .browser{background:#fff;border:1px solid #ddd;border-radius:14px;overflow:hidden;}
+        .browser-bar{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid #e8e8e8;background:#f5f5f3;}
+        .dot-r{width:11px;height:11px;border-radius:50%;background:#f09595;flex-shrink:0;}
+        .dot-y{width:11px;height:11px;border-radius:50%;background:#fac775;flex-shrink:0;}
+        .dot-g{width:11px;height:11px;border-radius:50%;background:#97c459;flex-shrink:0;}
+        .url-bar{flex:1;background:#ebebeb;border-radius:99px;padding:4px 14px;font-size:12px;color:#888;font-family:monospace;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+        .browser-body{padding:18px;min-height:230px;position:relative;}
+        .screen{display:none;}
+        .screen.active{display:block;}
+        .search-bar-mock{display:flex;align-items:center;border:2px solid #fac775;border-radius:5px;padding:8px 12px;gap:8px;margin-bottom:14px;background:#fff;}
+        .typing-text{font-size:13px;color:#222;font-family:monospace;}
+        .cursor{display:inline-block;width:2px;height:14px;background:#378add;vertical-align:middle;animation:blink .7s step-end infinite;}
+        @keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
+        .product-grid{display:flex;flex-direction:column;gap:7px;}
+        .product-row{display:flex;align-items:center;gap:10px;padding:8px 10px;border:1px solid #e8e8e8;border-radius:9px;background:#fff;opacity:0;transform:translateY(6px);transition:opacity .3s,transform .3s,border-color .2s,background .2s;}
+        .product-row.show{opacity:1;transform:translateY(0);}
+        .product-row.highlight{border-color:#378add;background:#e6f1fb;}
+        .prod-icon{width:32px;height:32px;border-radius:8px;background:#f4f4f0;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+        .prod-name{font-size:12px;color:#222;flex:1;line-height:1.4;}
+        .prod-price{font-size:13px;font-weight:600;white-space:nowrap;font-family:monospace;}
+        .scan-line{position:absolute;left:18px;right:18px;height:2px;background:#378add;opacity:.4;transition:top .8s linear;}
+        .excel-rows{display:flex;flex-direction:column;}
+        .excel-header{display:grid;grid-template-columns:28px 1fr 82px 70px;background:#eaf3de;border:1px solid #c0dd97;}
+        .excel-header div{font-size:11px;font-weight:600;color:#27500a;padding:5px 8px;border-right:1px solid #c0dd97;}
+        .excel-row{display:grid;grid-template-columns:28px 1fr 82px 70px;border:1px solid #e8e8e8;border-top:none;opacity:0;transition:opacity .4s;}
+        .excel-row.show{opacity:1;}
+        .excel-row div{font-size:11px;color:#222;padding:5px 8px;border-right:1px solid #e8e8e8;}
+        .excel-row .num{color:#888;}
+        .excel-row .price{color:#3b6d11;font-family:monospace;font-weight:600;}
+        .excel-row .ok{color:#3b6d11;}
+        .log-panel{margin-top:10px;background:#fff;border:1px solid #e0e0e0;border-radius:9px;padding:8px 12px;height:72px;overflow:hidden;}
+        .log-line{font-size:11px;font-family:monospace;padding:2px 0;opacity:0;transform:translateY(4px);transition:opacity .25s,transform .25s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+        .log-line.show{opacity:1;transform:translateY(0);}
+        .log-line.pass{color:#3b6d11;}
+        .log-line.info{color:#888;}
+        .log-line.active{color:#185fa5;}
+        .controls{display:flex;align-items:center;justify-content:space-between;margin-top:12px;gap:10px;}
+        .ctrl-btns{display:flex;gap:8px;}
+        .ctrl-btns button{display:flex;align-items:center;gap:5px;padding:7px 16px;font-size:12px;font-weight:500;border:1px solid #ccc;border-radius:8px;background:#fff;cursor:pointer;transition:background .15s,transform .1s;}
+        .ctrl-btns button:hover{background:#f0f0ee;}
+        .ctrl-btns button:active{transform:scale(.97);}
+        .ctrl-btns button:disabled{opacity:.45;cursor:default;}
+        .progress-track{flex:1;height:5px;background:#e8e8e8;border-radius:99px;overflow:hidden;}
+        .progress-fill{height:100%;background:#378add;border-radius:99px;width:0%;transition:width .4s;}
+        .step-label{font-size:11px;color:#888;white-space:nowrap;}
+    </style>
+</head>
+<body>
+
+<div class="scene">
+    <div class="browser">
+        <div class="browser-bar">
+            <div class="dot-r"></div>
+            <div class="dot-y"></div>
+            <div class="dot-g"></div>
+            <div class="url-bar" id="url-bar">about:blank</div>
+        </div>
+        <div class="browser-body">
+
+            <div class="screen active" id="screen-idle">
+                <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:190px;gap:10px;">
+                    <i class="ti ti-player-play" style="font-size:36px;color:#bbb;"></i>
+                    <span style="font-size:13px;color:#aaa;">Press Run to start the automation</span>
+                </div>
+            </div>
+
+            <div class="screen" id="screen-open">
+                <div style="text-align:center;padding:18px 0 12px;">
+                    <div style="font-size:24px;font-weight:700;color:#e24b4a;letter-spacing:-1px;">amazon<span style="color:#fac775;">.in</span></div>
+                    <div style="font-size:11px;color:#aaa;margin-top:3px;">Online Shopping in India</div>
+                </div>
+                <div class="search-bar-mock">
+                    <i class="ti ti-search" style="font-size:15px;color:#aaa;"></i>
+                    <span class="typing-text" id="typing-text"></span><span class="cursor"></span>
+                    <div style="background:#fac775;border-radius:3px;padding:4px 12px;font-size:11px;font-weight:600;color:#633806;margin-left:auto;flex-shrink:0;">Search</div>
+                </div>
+                <div style="font-size:11px;color:#aaa;text-align:center;">Searching amazon.in for water purifier…</div>
+            </div>
+
+            <div class="screen" id="screen-results">
+                <div style="font-size:11px;color:#aaa;margin-bottom:10px;">Results for <strong style="color:#222;">water purifier</strong> — 22 products found</div>
+                <div class="product-grid">
+                    <div class="product-row" id="p1"><div class="prod-icon"><i class="ti ti-droplet" style="font-size:16px;color:#378add;"></i></div><div class="prod-name">Native M1 Pro Water Purifier · Urban Company</div><div class="prod-price" style="color:#3b6d11;">₹17,499</div></div>
+                    <div class="product-row" id="p2"><div class="prod-icon"><i class="ti ti-droplet" style="font-size:16px;color:#378add;"></i></div><div class="prod-name">Native M0 Water Purifier · Urban Company</div><div class="prod-price" style="color:#3b6d11;">₹13,499</div></div>
+                    <div class="product-row" id="p3"><div class="prod-icon"><i class="ti ti-droplet" style="font-size:16px;color:#1d9e75;"></i></div><div class="prod-name">AQUA D PURE 4-in-1 Copper RO Purifier</div><div class="prod-price" style="color:#3b6d11;">₹5,248</div></div>
+                    <div class="product-row" id="p4"><div class="prod-icon"><i class="ti ti-droplet" style="font-size:16px;color:#1d9e75;"></i></div><div class="prod-name">AquaX Pure RO+UV+COPPER+ZINC 10-Stage</div><div class="prod-price" style="color:#3b6d11;">₹4,999</div></div>
+                    <div class="product-row" id="p5"><div class="prod-icon"><i class="ti ti-droplet" style="font-size:16px;color:#ba7517;"></i></div><div class="prod-name">Aquaguard Delight NXT Aquasaver 9-Stage</div><div class="prod-price" style="color:#3b6d11;">₹10,499</div></div>
+                </div>
+                <div class="scan-line" id="scan-line" style="top:60px;"></div>
+            </div>
+
+            <div class="screen" id="screen-excel">
+                <div style="display:flex;align-items:center;gap:6px;margin-bottom:10px;">
+                    <i class="ti ti-file-spreadsheet" style="font-size:16px;color:#3b6d11;"></i>
+                    <span style="font-size:13px;font-weight:600;color:#222;">PriceData.xlsx</span>
+                    <span style="font-size:11px;color:#aaa;">— testdata/</span>
+                </div>
+                <div class="excel-rows">
+                    <div class="excel-header"><div>#</div><div>Product</div><div>Price</div><div>Status</div></div>
+                    <div class="excel-row" id="er1"><div class="num">1</div><div>Native M1 Pro</div><div class="price">₹17,499</div><div class="ok">✓ saved</div></div>
+                    <div class="excel-row" id="er2"><div class="num">2</div><div>Native M0</div><div class="price">₹13,499</div><div class="ok">✓ saved</div></div>
+                    <div class="excel-row" id="er3"><div class="num">3</div><div>AQUA D PURE</div><div class="price">₹5,248</div><div class="ok">✓ saved</div></div>
+                    <div class="excel-row" id="er4"><div class="num">4</div><div>AquaX Pure</div><div class="price">₹4,999</div><div class="ok">✓ saved</div></div>
+                    <div class="excel-row" id="er5"><div class="num">5</div><div>Aquaguard Delight</div><div class="price">₹10,499</div><div class="ok">✓ saved</div></div>
+                </div>
+            </div>
+
+            <div class="screen" id="screen-track">
+                <div style="font-size:11px;color:#aaa;margin-bottom:10px;">Re-checking prices against saved Excel data…</div>
+                <div class="product-grid">
+                    <div class="product-row show" id="t1"><div class="prod-icon"><i class="ti ti-check" style="font-size:16px;color:#3b6d11;"></i></div><div class="prod-name">Native M1 Pro</div><div class="prod-price" style="color:#3b6d11;">₹17,499 — no change</div></div>
+                    <div class="product-row show" id="t2"><div class="prod-icon"><i class="ti ti-check" style="font-size:16px;color:#3b6d11;"></i></div><div class="prod-name">Native M0</div><div class="prod-price" style="color:#3b6d11;">₹13,499 — no change</div></div>
+                    <div class="product-row show" id="t3"><div class="prod-icon"><i class="ti ti-check" style="font-size:16px;color:#3b6d11;"></i></div><div class="prod-name">AQUA D PURE</div><div class="prod-price" style="color:#3b6d11;">₹5,248 — no change</div></div>
+                    <div class="product-row show" id="t4"><div class="prod-icon"><i class="ti ti-check" style="font-size:16px;color:#3b6d11;"></i></div><div class="prod-name">AquaX Pure</div><div class="prod-price" style="color:#3b6d11;">₹4,999 — no change</div></div>
+                </div>
+                <div id="done-banner" style="opacity:0;margin-top:10px;padding:9px 14px;background:#eaf3de;border-radius:9px;font-size:12px;font-weight:600;color:#3b6d11;display:flex;align-items:center;gap:6px;transition:opacity .4s;">
+                    <i class="ti ti-circle-check" style="font-size:16px;"></i> All 3 tests passed · 0 price changes detected
+                </div>
+            </div>
+
+        </div>
     </div>
-  </div>
-<div class="test-content scrollable">
-<div class="test-content-tools">
-<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+
+    <div class="log-panel"><div id="log-container"></div></div>
+
+    <div class="controls">
+        <div class="ctrl-btns">
+            <button id="btn-run" onclick="startAnim()">
+                <i class="ti ti-player-play" style="font-size:14px;"></i> Run
+            </button>
+            <button id="btn-reset" onclick="resetAnim()">
+                <i class="ti ti-refresh" style="font-size:14px;"></i> Reset
+            </button>
+        </div>
+        <div class="progress-track"><div class="progress-fill" id="prog"></div></div>
+        <div class="step-label" id="step-label">Idle</div>
+    </div>
 </div>
-<div class="test-content-detail"><div class="detail-body"></div></div>
-</div></div>
-<div class="container-fluid p-4 view dashboard-view">
-<div class="row">
-<div class="col-md-3">
-<div class="card"><div class="card-body">
-<p class="m-b-0">Started</p>
-<h3>04-Jun-2026 13:19:14</h3>
-</div></div>
-</div>
-<div class="col-md-3">
-<div class="card"><div class="card-body">
-<p class="m-b-0">Ended</p>
-<h3>04-Jun-2026 13:23:27</h3>
-</div></div>
-</div>
-<div class="col-md-3">
-<div class="card"><div class="card-body">
-<p class="m-b-0 text-pass">Tests Passed</p>
-<h3>3</h3>
-</div></div>
-</div>
-<div class="col-md-3">
-<div class="card"><div class="card-body">
-<p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
-</div></div>
-</div>
-</div>
-<div class="row">
-<div class="col-md-6">
-<div class="card">
-<div class="card-header">
-<h6 class="card-title">Tests</h6>
-</div>
-<div class="card-body">
-<div class="">
-<canvas id='parent-analysis' width='115' height='90'></canvas>
-</div>
-</div>
-<div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>3</b> tests passed
-</small>
-</div>
-<div>
-<small data-tooltip='0%'><b>0</b> tests failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
-</small>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="card">
-<div class="card-header">
-<h6 class="card-title">Log events</h6>
-</div>
-<div class="card-body">
-<div class="">
-<canvas id='events-analysis' width='115' height='90'></canvas>
-</div>
-</div>
-<div class="card-footer">
-<div><small data-tooltip='50%'><b>13</b> events passed</small></div>
-<div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>13</b> others
-</small>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row"><div class="col-md-12">
-<div class="card"><div class="card-header"><p>Timeline</p></div>
-<div class="card-body pt-0"><div>
-<canvas id="timeline" height="120"></canvas>
-</div></div>
-</div>
-</div></div>
+
 <script>
-var timeline = {
-"searchWaterPurifier":24.867,"captureProductData":112.688,"trackPriceChanges":110.757
-};
+    var running = false;
+    var logLines = [];
+
+    function delay(ms){ return new Promise(r=>setTimeout(r,ms)); }
+    function setProgress(n,t){ document.getElementById('prog').style.width=Math.round((n/10)*100)+'%'; document.getElementById('step-label').textContent=t; }
+    function showScreen(id){ document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active')); document.getElementById(id).classList.add('active'); }
+    function setUrl(u){ document.getElementById('url-bar').textContent=u; }
+
+    function addLog(text, cls){
+        var c = document.getElementById('log-container');
+        var d = document.createElement('div');
+        d.className = 'log-line '+(cls||'info');
+        d.textContent = text;
+        c.appendChild(d);
+        requestAnimationFrame(()=>d.classList.add('show'));
+        logLines.push(d);
+        if(logLines.length > 4){ var old=logLines.shift(); old.style.opacity='0'; setTimeout(()=>old.remove(),300); }
+    }
+
+    async function typeText(text){
+        var el = document.getElementById('typing-text');
+        el.textContent = '';
+        for(var i=0;i<text.length;i++){ el.textContent+=text[i]; await delay(60); }
+    }
+
+    async function startAnim(){
+        if(running) return;
+        running = true;
+        document.getElementById('btn-run').disabled = true;
+
+        setProgress(1,'Opening browser…');
+        addLog('[13:19:14] Launching Chrome driver','active');
+        setUrl('about:blank');
+        showScreen('screen-open');
+        await delay(700);
+
+        setUrl('https://www.amazon.in');
+        addLog('[13:19:20] Opened amazon.in homepage','info');
+        await delay(500);
+        await typeText('water purifier');
+        setProgress(2,'Searching…');
+        addLog('[13:19:21] ✓ Homepage loaded successfully','pass');
+        await delay(500);
+
+        setProgress(3,'Loading results…');
+        setUrl('https://www.amazon.in/s?k=water+purifier');
+        showScreen('screen-results');
+        addLog('[13:19:41] Searched for: water purifier','info');
+
+        for(var i=1;i<=5;i++){
+            document.getElementById('p'+i).classList.add('show');
+            await delay(220);
+        }
+        document.getElementById('scan-line').style.top='190px';
+        await delay(500);
+        addLog('[13:19:41] ✓ 22 products found on page','pass');
+        setProgress(4,'Test 1 passed ✓');
+        await delay(600);
+
+        setProgress(5,'Capturing data…');
+        addLog('[13:19:49] Capturing product names and prices','info');
+        showScreen('screen-excel');
+        setUrl('file://testdata/PriceData.xlsx');
+
+        for(var j=1;j<=5;j++){
+            document.getElementById('er'+j).classList.add('show');
+            addLog('[13:21:3'+j+'] Product '+j+' captured ✓','pass');
+            await delay(370);
+        }
+        setProgress(7,'Excel saved');
+        addLog('[13:21:35] ✓ Excel saved: PriceData.xlsx','pass');
+        await delay(700);
+
+        setProgress(8,'Re-checking prices…');
+        setUrl('https://www.amazon.in/s?k=water+purifier');
+        showScreen('screen-track');
+        addLog('[13:21:46] Re-navigating to Amazon…','info');
+        await delay(500);
+
+        for(var k=1;k<=4;k++){
+            var el = document.getElementById('t'+k);
+            el.classList.add('highlight');
+            await delay(320);
+            el.classList.remove('highlight');
+        }
+        addLog('[13:23:27] Checked 4 · Changes: 0','pass');
+        setProgress(9,'Finalising…');
+        await delay(400);
+
+        document.getElementById('done-banner').style.opacity='1';
+        setProgress(10,'All tests passed ✓');
+        addLog('[13:23:27] ✓ Suite complete — 3/3 passed','pass');
+        running = false;
+    }
+
+    function resetAnim(){
+        running = false;
+        document.getElementById('btn-run').disabled = false;
+        showScreen('screen-idle');
+        setUrl('about:blank');
+        setProgress(0,'Idle');
+        document.getElementById('log-container').innerHTML='';
+        logLines=[];
+        document.getElementById('typing-text').textContent='';
+        for(var i=1;i<=5;i++){
+            var p=document.getElementById('p'+i); if(p){ p.classList.remove('show','highlight'); }
+            var e=document.getElementById('er'+i); if(e){ e.classList.remove('show'); }
+        }
+        for(var j=1;j<=4;j++){
+            var t=document.getElementById('t'+j); if(t) t.classList.remove('highlight');
+        }
+        document.getElementById('done-banner').style.opacity='0';
+        document.getElementById('scan-line').style.top='60px';
+    }
 </script>
-<div class="row">
-<div class="col-lg-6 col-md-12 sysenv-container">
-<div class="card">
-<div class="card-header"><p>System/Environment</p></div>
-<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
-<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
-<tbody>
-<tr>
-<td>Team</td>
-<td>CODETESTERS</td>
-</tr>
-<tr>
-<td>Project</td>
-<td>Amazon Price Tracker</td>
-</tr>
-<tr>
-<td>Framework</td>
-<td>Selenium Java + TestNG + POM</td>
-</tr>
-<tr>
-<td>Browser</td>
-<td>Chrome</td>
-</tr>
-<tr>
-<td>Environment</td>
-<td>Production (amazon.in)</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-</div>
-</div>
-</div>
-<script>
-var statusGroup = {
-parentCount: 5,
-passParent: 3,
-failParent: 0,
-warningParent: 0,
-skipParent: 0,
-childCount: 5,
-passChild: 0,
-failChild: 0,
-warningChild: 0,
-skipChild: 0,
-infoChild: 0,
-grandChildCount: 5,
-passGrandChild: 0,
-failGrandChild: 0,
-warningGrandChild: 0,
-skipGrandChild: 0,
-infoGrandChild: 0,
-eventsCount: 5,
-passEvents: 13,
-failEvents: 0,
-warningEvents: 0,
-skipEvents: 0,
-infoEvents: 13
-};
-</script>        </div>
-      </div>
-    </div>
-  </div>
-<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
-<script type="text/javascript"></script></body>
+</body>
 </html>
